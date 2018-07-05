@@ -7,7 +7,7 @@ const usersState = ["John Doe", "Loremo de Ipsumio", "Carl Carling"];
 const reducer = (state = usersState , action) =>{
     if(action.type === "ADD_NEW_USER"){
         console.log(action);
-        return state.concat(action.username);
+        return state.concat(action.username)
     }
     console.log(action);
 return state
